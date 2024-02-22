@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="Text/css" href="estilo.css">
+    <title>CV VALENTÍN ALVES</title>
+    <link rel="icon" href=""> 
+</head>
+<body>
+    <!--MENU DE ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                M<span class="color">M</span>
+            </div>
+            <nav id="nav">
+                <ul class="responsive">
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#resumen" onclick="seleccionar()">Resumen</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCIÓN DE INICIO-->
+    <section class="inicio" id="inicio">
+        <div class="contenido-seccion">
+            <div class="info">
+                <h1>MARIANO MARTINEZ</h1>
+                <h2>DESARROLLADOR WEB FRONTEND</h2>
+                <div class="redes">
+                    <a href="https://www.instagram.com/martiinezmarian/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/martinez-mariano"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="foto">
+                <img src="img/perfil.jpg" alt="Foto de Martinez Mariano">
+            </div>
+        </div>
+    </section>
+
+    <!--SOBRE MI-->
+    <section class="sobremi" id="sobremi">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <h3>Detalles Personales</h3>
+
+            <p class="especial">Soy un desarrollador web frontend especializado en la creación de aplicaciones y sitios web.</p>
+            <p>Me apasiona la tecnología y siempre estoy buscando aprender nuevas habilidades para mantenerme actualizado. Soy una persona proactiva, autónoma y con habilidades de comunicación efectiva. Mi objetivo es contribuir al éxito de la empresa y ofrecer productos de alta calidad.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <span class="titulo-detalle">Ubicación</span>
+                    <p>Florencio Varela, Buenos Aires, Argentina</p>
+                </div>
+                <div class="col">
+                    <a href="www.linkedin.com/in/martinez-mariano"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <span class="titulo-detalle">Linkedin</span>
+                    <p>www.linkedin.com/in/martinez-mariano</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="titulo-detalle">E-mail</span>
+                    <p>martinezmarianocv@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis Habilidades</h2>
+            <h3>ME ESPECIALIZO EN</h3>
+            <div class="fila">
+                <div class="col">
+                    <span>HTML</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="html">
+                            <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+
+                        </div>
+                        <span>99%</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span>JAVASCRIPT</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="javascript">
+                            <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+
+                        </div>
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <span>CSS</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="css">
+                            <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+
+                        </div>
+                        <span>92%</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span>REACT</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="react">
+                            <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+                        </div>
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EXPERIENCIA-->
+    <section class="experiencia" id="resumen">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Resumen</h2>
+            <h3>ESTUDIOS Y EXPERIENCIA</h3>
+            <div class="info">
+                <div class="col">
+                    <span class="titulo">EDUCACIÓN</span>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2023 - 2024</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Tiene como objetivo formar técnicos/as capaces de elucidar e implementar soluciones en un amplio espectro de problemas asociados a las tareas de diseño/programación dentro del desarrollo de software, en un alcance razonable para un egresado/a pre-universitario, siendo capaces de aprovechar los conceptos aprehendidos en la carrera para pensar y resolver situaciones concretas, y basados en una amplia experiencia práctica obtenida durante el recorrido de la carrera.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Cursando 2° año de la Tec. en Programación Informática</h4>
+                                <p>Universidad Nacional de Quilmes</p>
+                                <span class="promedio">-</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2024</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Lo que aprendí: Usar Git en tus Proyectos de Desarrollo de Software; Usar Github para Mejorar el Desarrollo de Software; Vincular Git y Github para que trabajen en Conjunto; Crear Repositorios Locales con Git; Trabajar con Repositorios Locales de Git; Trabajar con Ramas en Git; Trabajar con Merge en Git; Trabajar con Rebase en Git; Moverse entre Commits para revertir cambios; Usar Github como Repositorio Remoto; Todas las Funciones que ofrece github para optimizar el desarrollo de software
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Curso completo de Git y GitHub. Prepárate para el desarrollo</h4>
+                                <p>Udemy. Alvaro Chirou y Walter Coto</p>
+                                <span class="promedio">-</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <span class="titulo">EXPERIENCIA LABORAL</span>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2018 - 2021</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Diseñé y desarrollé varios proyectos web y aplicaciones utilizando tecnologías como HTML, CSS, JavaScript, React, Node.js y MongoDB. Trabajé en un equipo multidisciplinario para lograr el éxito del proyecto y cumplir con los plazos de entrega.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Desarrollador Web Junior</h4>
+                                <p>ABC Company, Florencio Varela, Buenos Aires, Argentina</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2021 - 2023</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Desarrollé sitios web y aplicaciones utilizando tecnologías como PHP, MySQL, HTML, CSS y JavaScript.Realicé tareas de mantenimiento y mejora de las aplicaciones existentes.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Desarrollo Web Full Stack</h4>
+                                <p>XYZ Company, Quilmes, Buenos Aires, Argentina</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTO-->
+    <footer class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <h3>¡CONTACTAME AHORA!</h3>
+            <DIV class="fila">
+                <div class="col">
+                    <h2>
+                        <a href="www.linkedin.com/in/martinez-mariano"><i class="fa-brands fa-linkedin-in"></i></a> Linkedin
+                    </h2>
+                    <span>www.linkedin.com/in/martinez-mariano</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span>martinezmarianocv@gmail.com</span>
+                </div>
+            </DIV>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

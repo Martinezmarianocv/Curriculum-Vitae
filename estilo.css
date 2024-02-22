@@ -1,0 +1,434 @@
+/**FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,400;1,700&family=Julee&family=Montserrat:ital,wght@0,600;0,700;1,200;1,300;1,400&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*MENU DE ENCABEZDO*/
+.contenedor-header{
+    background-color: rgb(121, 31, 31);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Julee', cursive;
+    text-shadow: 0 0 35px cyan;
+    padding: 0 20px;
+}
+.contenedor-header header .logo .color{
+    font-family: 'Julee', cursive;
+    color:darkturquoise;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header ul li a{
+    text-align: none;
+    color: #ffffff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.contenedor-header header ul li a:hover{
+    color: rgb(62, 102, 102);
+}
+.nav-responsive{
+    background-color: rgb(121, 31, 31);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION INICIO*/
+.inicio {
+    background-image: url("img/fondoinicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    color:#fff;
+    margin-top: 58px;
+}
+.inicio .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.inicio .contenido-seccion .info{
+    padding-bottom:130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal ;
+    font-size: 20px;
+    margin-top: 0px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:brown;
+    color: #fff;
+    border:1px solid brown;
+    border-radius: 35%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 5px;
+    transition: 0.3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color:brown;
+    background-color: #fff;
+    box-shadow: 0 0 10px brown;
+}
+.inicio .contenido-seccion .foto {
+    position: relative;
+    height: 20px;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 270px;
+    border-radius: 50%;
+    border: 5px solid brown ;
+    position: absolute;
+    left: 50%;
+    top: -120px;
+    transform: translateX(-50%);;
+}
+
+/** SOBRE MI*/
+.titulo-seccion{
+    font-family: 'Arvo', serif;
+    font-size: 1.5rem;
+}
+.sobremi {
+    background-color: #ffffff;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenido-seccion .especial{
+    max-width: 1000px;
+    color: brown;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: darkslategray;
+}
+.sobremi .contenido-seccion .fila {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: brown;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid brown;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block ;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/* SECCION HABILIDADES */
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/habilidades.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+    max-width: 1600;
+}
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.habilidades .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+/* EXPERIENCIA*/
+.experiencia {
+    background-color: #ffffff;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.experiencia .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.experiencia .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.experiencia .contenido-seccion .info {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.experiencia .contenido-seccion .info .col {
+    width: 47%;
+}
+.experiencia .contenido-seccion .info .col .titulo {
+    display: inline-block;
+    color: brown;
+    font-weight: bold;
+    border: 1px solid brown;
+    padding: 10px;
+}
+.experiencia .contenido-seccion .info .col table {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.experiencia .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #363636;
+}
+.experiencia .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.experiencia .contenido-seccion .info .col h3{
+    font-size:20px;
+    margin-bottom: 5px;
+}
+.experiencia .contenido-seccion .info .col table p{
+    font-size: 15px;
+    color: darkslategray;
+}
+.experiencia .contenido-seccion .info .col table .promedio{
+    display: block;
+    color: brown;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.experiencia .contenido-seccion .info .col table .descripcion {
+    border-left: 1px solid #363636;
+    padding-left: 20px;
+    color: darkslategray ;
+}
+
+/*CONTACTO*/
+.contacto{
+    background-color: rgb(0, 0, 0);
+    padding: 140px 0 100px 0;
+    color: #ffffff ;
+    text-align: center;
+}
+.contacto .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: brown;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color: rgb(121, 31, 31);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        padding: 10px 0;
+    }
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .experiencia .contenido-seccion .info{
+        display: block;
+    }
+    .experiencia .contenido-seccion .info .col{
+        width: 100%;
+        margin: auto;
+    }
+    .experiencia .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .experiencia .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
+
+@media screen and (max-width:415px){
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 95%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:412px){
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 96%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:395px){
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 91%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:391px){
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 90%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:375px){
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 85%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:361px){
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 83%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:281px){
+    .inicio{
+        width: 120%;
+    }
+    .sobremi{
+        width: 120%;
+    }
+    .habilidades{
+        width: 120%;
+    }
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        width: 67%;
+        justify-content: center;
+    }
+    .experiencia{
+        width: 120%;
+    }
+    .contacto{
+        width: 120%;
+    }
+}
